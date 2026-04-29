@@ -1,10 +1,13 @@
+from urllib import response
+
 from dotenv import load_dotenv
-from openai import OpenAI
-import json
+from anthropic import Anthropic
 import os
+import json
 import requests
-from pypdf import PdfReader
+from PyPDF2 import PdfReader
 import gradio as gr
+from yaml import reader
 
 
 load_dotenv(override=True)
@@ -19,86 +22,91 @@ def push(text):
         }
     )
 
-
 def record_user_details(email, name="Name not provided", notes="not provided"):
     push(f"Recording {name} with email {email} and notes {notes}")
     return {"recorded": "ok"}
 
-def record_unknown_question(question):
+def record_user_details(email, name="Name not provided", message="Message not provided"):
+    push(f"Recording interest from:\nName: {name}\nEmail: {email}\nMessage: {message}")
+    return{"recorded": "ok"}
+
+def record_unknown_questions(question):
     push(f"Recording {question}")
     return {"recorded": "ok"}
 
 record_user_details_json = {
     "name": "record_user_details",
-    "description": "Use this tool to record that a user is interested in being in touch and provided an email address",
-    "parameters": {
+    "description": "Use this tool when a user wants to get in touch with us",
+    "input_schema": {
         "type": "object",
         "properties": {
             "email": {
                 "type": "string",
-                "description": "The email address of this user"
+                "description": "The user's email address"
             },
             "name": {
                 "type": "string",
-                "description": "The user's name, if they provided it"
-            }
-            ,
-            "notes": {
+                "description": "The user's name"
+            },
+            "message": {
                 "type": "string",
-                "description": "Any additional information about the conversation that's worth recording to give context"
+                "description": "The user's message"
             }
         },
-        "required": ["email"],
-        "additionalProperties": False
+        "required": ["email"]
     }
 }
 
-record_unknown_question_json = {
-    "name": "record_unknown_question",
-    "description": "Always use this tool to record any question that couldn't be answered as you didn't know the answer",
-    "parameters": {
+record_unknown_questions_json = {
+    "name": "record_unknown_questions",
+    "description": "Use this tool to record any questions that I don't know how to answer",
+    "input_schema": {
         "type": "object",
         "properties": {
             "question": {
                 "type": "string",
-                "description": "The question that couldn't be answered"
-            },
+                "description": "The question that I don't know how to answer"
+            }
         },
-        "required": ["question"],
-        "additionalProperties": False
+        "required": ["question"]
     }
 }
 
-tools = [{"type": "function", "function": record_user_details_json},
-        {"type": "function", "function": record_unknown_question_json}]
+tools = [record_user_details_json, record_unknown_questions_json]
 
 
 class Me:
-
     def __init__(self):
-        self.openai = OpenAI()
-        self.name = "Ed Donner"
+        self.client = Anthropic()
+        self.name = "Nicholas Smith"
+        
         reader = PdfReader("me/linkedin.pdf")
         self.linkedin = ""
         for page in reader.pages:
             text = page.extract_text()
             if text:
                 self.linkedin += text
+        
+        reader = PdfReader("me/Nicholas_Smith_Resume.pdf")
+        for page in reader.pages:
+            text = page.extract_text()
+            if text:
+                self.linkedin += text
+
         with open("me/summary.txt", "r", encoding="utf-8") as f:
             self.summary = f.read()
+        
 
 
-    def handle_tool_call(self, tool_calls):
+    def handle_tool_call(self, response):
+        tool_name = response.name
+        tool_input = response.input
         results = []
-        for tool_call in tool_calls:
-            tool_name = tool_call.function.name
-            arguments = json.loads(tool_call.function.arguments)
-            print(f"Tool called: {tool_name}", flush=True)
-            tool = globals().get(tool_name)
-            result = tool(**arguments) if tool else {}
-            results.append({"role": "tool","content": json.dumps(result),"tool_call_id": tool_call.id})
+        tool = globals().get(tool_name)
+        result = tool(**tool_input) if tool else {}
+        results.append(result)
         return results
-    
+        
     def system_prompt(self):
         system_prompt = f"You are acting as {self.name}. You are answering questions on {self.name}'s website, \
 particularly questions related to {self.name}'s career, background, skills and experience. \
@@ -113,22 +121,30 @@ If the user is engaging in discussion, try to steer them towards getting in touc
         return system_prompt
     
     def chat(self, message, history):
-        messages = [{"role": "system", "content": self.system_prompt()}] + history + [{"role": "user", "content": message}]
-        done = False
-        while not done:
-            response = self.openai.chat.completions.create(model="gpt-4o-mini", messages=messages, tools=tools)
-            if response.choices[0].finish_reason=="tool_calls":
-                message = response.choices[0].message
-                tool_calls = message.tool_calls
-                results = self.handle_tool_call(tool_calls)
-                messages.append(message)
-                messages.extend(results)
-            else:
-                done = True
-        return response.choices[0].message.content
+        messages = [{"role": "user", "content": self.system_prompt()}] 
+    
+        for msg in history:
+            messages.append({"role": msg["role"], "content": msg["content"]})
+        messages.append({"role": "user", "content": message})
+
+        response = self.client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=1024,
+            system="You are a helpful assistant",
+            messages=messages,
+            tools=tools,
+        )
+
+        reply = response.content[0].text
+
+        if response.stop_reason == "tool_use":
+            for block in response.content:
+                if block.type == "tool_use":
+                    self.handle_tool_call(block)
+
+        return reply
     
 
 if __name__ == "__main__":
     me = Me()
     gr.ChatInterface(me.chat, type="messages").launch()
-    

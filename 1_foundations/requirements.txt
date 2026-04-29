@@ -2,5 +2,5 @@ requests
 python-dotenv
 gradio
 pypdf
-openai
-openai-agents
+PyPDF2
+anthropic
