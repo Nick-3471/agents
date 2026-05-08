@@ -1,22 +1,67 @@
-I need to pause and request the complete financial analyses for all 10 companies before proceeding with final selections. 
+# FINAL STOCK PICKS REPORT
 
-Based on the current task and context provided, I can see that I have:
-1. ✅ A list of 10 trending companies with confidence scores
-2. ❌ INCOMPLETE financial analysis data (the JSON appears to be cut off mid-analysis for SoundHound AI, and agilon health analysis is missing entirely)
+## Top 5 Stock Picks Ranked by Conviction
 
-**Before I can deliver the final stock picks report, I need:**
+---
 
-The complete financial analysis for:
-- **SoundHound AI (SOUN)** - analysis was truncated
-- **agilon health (AGL)** - analysis is completely missing
+### **1. SoFi Technologies, Inc. (SOFI)**
+- **Conviction Level:** High
+- **Entry Price Range:** $15.50 – $16.50
+- **Short-Term Target Price (1-3 months):** $22.00 – $24.00
+- **Key Risk to Thesis:** Regulatory changes in consumer lending; competitive pressure from traditional banks entering fintech; macro slowdown impacting loan origination volumes
+- **Buy Rationale:** Exceptional 41% YoY revenue growth combined with 11 consecutive quarters of profitability, attractive 35x P/E multiple below sector average, and 33-56% upside to analyst targets make this the highest-conviction pick with both growth and valuation support.
 
-Once I have the full financial health assessment, valuation analysis, analyst consensus, catalysts/risks, fundamentals rating, investment grade, and investment thesis for both remaining companies, I will be able to:
+---
 
-1. ✅ Cross-check all 10 companies for duplicates
-2. ✅ Eliminate any rated C or D
-3. ✅ Apply strict selection criteria (fundamentals, catalysts, valuations, trend conviction)
-4. ✅ Rank top 5 picks by conviction (highest to lowest)
-5. ✅ Provide complete details for each pick (entry price, targets, risks, rationale)
-6. ✅ Deliver portfolio summary with sector diversity and theme
+### **2. Krystal Biotech, Inc. (KRYS)**
+- **Conviction Level:** High
+- **Entry Price Range:** $290.00 – $305.00
+- **Short-Term Target Price (1-3 months):** $320.00 – $340.00
+- **Key Risk to Thesis:** Gene therapy adoption risk; manufacturing scaling challenges; competitive therapies entering market; reimbursement uncertainties
+- **Buy Rationale:** Proven commercial execution with 32% Vyjuvek sales growth, industry-leading 95% gross margins, 11 consecutive profitable quarters, and strong 2026-27 pipeline catalysts justify premium valuation with modest but high-conviction upside.
 
-**Please provide the complete financial analysis data for SOUN and AGL so I can proceed with final selection.**
+---
+
+### **3. Qualcomm Incorporated (QCOM)**
+- **Conviction Level:** High
+- **Entry Price Range:** $210.00 – $225.00
+- **Short-Term Target Price (1-3 months):** $240.00 – $260.00
+- **Key Risk to Thesis:** Smartphone market saturation; geopolitical risks affecting China exposure; AI infrastructure buildout slower than expected; competitive pressure from AMD and NVIDIA
+- **Buy Rationale:** Strong fundamentals with 36-38x P/E in line with sector, recent Daiwa Outperform upgrade, meaningful exposure to AI data center and automotive end markets, and 27-41% upside to consensus targets despite near-term price target caution.
+
+---
+
+### **4. Cloudflare, Inc. (NET)**
+- **Conviction Level:** Medium
+- **Entry Price Range:** $185.00 – $200.00
+- **Short-Term Target Price (1-3 months):** $220.00 – $240.00
+- **Key Risk to Thesis:** Elevated valuation at 207x P/E leaves minimal margin for error; near-term profitability pressures; competitive threats from larger cloud providers; customer concentration risk
+- **Buy Rationale:** Strong 34% revenue growth with improving margins, healthy gross margins, and analyst price target raises to $270 provide momentum support, though valuation requires flawless execution and near-term profitability inflection.
+
+---
+
+### **5. Fluor Corporation (FLR)**
+- **Conviction Level:** Medium
+- **Entry Price Range:** $42.00 – $45.00
+- **Short-Term Target Price (1-3 months):** $52.00 – $58.00
+- **Key Risk to Thesis:** Project execution risks; commodity price volatility; labor cost inflation; cyclical downturn in infrastructure/energy spending; geopolitical project delays
+- **Buy Rationale:** Industrial sector rotation momentum with 67% analyst Strong Buy consensus, attractive 18-21x P/E discount to sector, strong project backlog visibility, and 25-48% upside to price targets position this as a thematic play on infrastructure/energy cycle.
+
+---
+
+## Duplicate Check
+
+✅ **CONFIRMED: Zero duplicate companies in final picks list**
+
+All five selections are unique ticker symbols with no overlap:
+- SOFI (SoFi Technologies)
+- KRYS (Krystal Biotech)
+- QCOM (Qualcomm)
+- NET (Cloudflare)
+- FLR (Fluor Corporation)
+
+---
+
+## Portfolio Summary
+
+This five-stock portfolio balances growth, profitability, and sector diversification across Financial Services, Biotechnology, Semiconductors, Software, and Engineering/Construction. The portfolio is anchored by two high-conviction, profitable growth stories (SoFi and Krystal Biotech) that offer both revenue acceleration and valuation support, complemented by three quality large-cap and mid-cap names (Qualcomm, Cloudflare, Fluor) positioned to benefit from secular AI infrastructure buildout, cloud computing adoption, and industrial sector rotation. Risk profile is moderate to moderately-aggressive: the top two picks carry lower valuation risk with proven profitability, while the remaining three offer growth catalysts offset by elevated valuation multiples (Cloudflare, Qualcomm) or cyclical exposure (Fluor). Overall, the portfolio reflects conviction in technology infrastructure tailwinds, fintech disruption, biotech innovation, and industrial cycle recovery, with intentional sector diversification to reduce concentration risk. All five companies carry A or B investment grades with strong fundamental support, eliminating any C or D-rated candidates from consideration.

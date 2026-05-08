@@ -1,17 +1,20 @@
 stock_research_task:
   description: >
-    Search for and identify exactly the top 10 most trending companies in the stock market
-    right now. Analyze market momentum, news sentiment, social media buzz, unusual trading
-    volume, and sector rotation patterns to surface companies gaining significant attention
-    and upward momentum. Look across all sectors and market caps. Focus on companies
-    that have strong catalysts driving their trend such as earnings beats, product
-    launches, partnerships, regulatory approvals, or macroeconomic tailwinds.
-    IMPORTANT: Stop searching as soon as you have identified the top 10 companies.
-    Do NOT continue researching, expanding, or adding to the list beyond 10. Return
-    the list immediately once 10 qualifying companies are found.
+    Search for and identify exactly the top 15 most trending companies in the stock market
+    right now. Restrict the search to companies headquartered in the United States whose
+    current stock price is under $100 USD per share. Exclude any company that does not
+    meet both of these criteria. Analyze market momentum, news sentiment, social media
+    buzz, unusual trading volume, and sector rotation patterns to surface companies
+    gaining significant attention and upward momentum. Look across all sectors and
+    market caps. Focus on companies that have strong catalysts driving their trend such
+    as earnings beats, product launches, partnerships, regulatory approvals, or
+    macroeconomic tailwinds.
+    IMPORTANT: Stop searching as soon as you have identified the top 15 companies.
+    Do NOT continue researching, expanding, or adding to the list beyond 15. Return
+    the list immediately once 15 qualifying companies are found.
   expected_output: >
     A JSON object matching the TrendingCompanyList schema with a single key `companies`
-    that is a list of exactly 10 TrendingCompany objects (no more, no fewer). Each
+    that is a list of exactly 15 TrendingCompany objects (no more, no fewer). Each
     TrendingCompany must contain:
     - name: Company name
     - ticker: Stock ticker symbol
@@ -26,30 +29,26 @@ stock_research_task:
 
 financial_analysis_task:
   description: >
-    Take the list of exactly 10 trending companies provided by the stock researcher and
-    conduct a comprehensive financial analysis on each one. Analyze only the 10 companies
-    handed to you — do not search for or add additional companies. Stop once all 10 have
-    been analyzed. For every company evaluate:
-    revenue growth, earnings per share (EPS), profit margins, debt-to-equity ratio,
-    price-to-earnings (P/E) ratio, EV/EBITDA, free cash flow, and analyst price targets.
-    Assess the competitive landscape, recent earnings history, upcoming catalysts,
-    and any red flags such as insider selling, dilution, or regulatory risk.
+    Take the list of trending companies provided by the stock researcher and
+    conduct a comprehensive financial analysis on each one. Do not search for or add additional companies. 
+    For every company evaluate: revenue growth, earnings per share (EPS), profit margins, 
+    debt-to-equity ratio, price-to-earnings (P/E) ratio, EV/EBITDA, free cash flow, 
+    and analyst price targets. Assess the competitive landscape, recent earnings history, 
+    upcoming catalysts, and any red flags such as insider selling, dilution, or regulatory risk.
     Compare each company against its sector peers. Your analysis should give a
     clear picture of whether the trend is backed by strong fundamentals or is
     purely hype-driven.
   expected_output: >
     A JSON object matching the TrendingCompanyResearchList schema with a single key
-    `research_list` containing one TrendingCompanyResearch object per company (all 10).
+    `research_list` containing one TrendingCompanyResearch object per company.
     Each TrendingCompanyResearch must contain:
     - name: Company name
     - ticker: Stock ticker symbol
     - financial_health: Summary covering revenue, EPS, margins, and debt
     - valuation: Assessment including P/E and EV/EBITDA versus sector average
     - analyst_consensus: Analyst consensus rating and average price target
-    - catalysts_and_risks: Key upcoming catalysts and material risks
     - fundamentals_rating: One of "Strong", "Moderate", or "Weak"
     - investment_grade: One of "A", "B", "C", or "D"
-    - investment_thesis: A 2-3 sentence investment thesis summary
   agent: financial_analyst
   context:
     - stock_research_task

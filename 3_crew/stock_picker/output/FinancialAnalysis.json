@@ -1,98 +1,96 @@
-I have received complete financial analysis for all 10 companies from the Senior Financial Research Analyst. Let me compile the final JSON output with all required information.
-
 ```json
 {
   "research_list": [
     {
-      "name": "NVIDIA Corporation",
-      "ticker": "NVDA",
-      "financial_health": "Exceptional profitability with $60.9B FY2024 revenue (+126% YoY), GAAP EPS of $11.93 (+586% YoY), gross margin of 76% (expanding), and fortress balance sheet with $54.1B net cash and minimal debt (D/E: 0.05). Free cash flow of $26.95B demonstrates exceptional cash generation despite capital intensity.",
-      "valuation": "P/E of 42.41x (TTM) vs. sector average 44.58x is competitive; forward P/E of 24.92 reflects market pricing in realistic deceleration. EV/EBITDA of ~40x reasonable for AI leader. Trading 22% below 10-year average P/E, suggesting valuation reset from historical peaks. Premium multiples justified by 126% revenue growth and dominant market position.",
-      "analyst_consensus": "Overwhelmingly bullish with 97% buy/strong buy rating and 0% sell. Average price target of $270-275 implies 28-30% upside from $211.50. Strong consensus across 40+ analysts with minimal dissent.",
-      "catalysts_and_risks": "Positive catalysts: continued AI infrastructure buildout, Blackwell/next-gen chip adoption, hyperscaler capex continuation. Material risks: export licensing controls on China sales (regulatory risk), insider selling activity ($803M+ in 90 days), valuation compression if AI cycle peaks, customer concentration among hyperscalers (Meta, Google, Amazon, Microsoft), potential inventory buildup indicated by AR growth.",
-      "fundamentals_rating": "Strong",
-      "investment_grade": "A",
-      "investment_thesis": "NVIDIA remains the dominant AI infrastructure play with fortress fundamentals, exceptional cash generation ($26.95B FCF), and 28-30% upside to consensus targets, though export licensing risks and insider selling warrant monitoring. Valuation is reasonable given 20%+ growth trajectory and unmatched 92% discrete GPU market share with superior CUDA software moat."
-    },
-    {
-      "name": "Advanced Micro Devices",
-      "ticker": "AMD",
-      "financial_health": "Strong operational recovery with Q4 2024 revenue of $7.7B (+24% YoY) and FY2024 revenue of $25.8B (+14% YoY). Gross margin of 51% and operating margin of 30% (non-GAAP) show profitability improvement. Data center segment grew 69% YoY. Manageable balance sheet with operational leverage improving.",
-      "valuation": "P/E of 71-80.5x significantly elevated relative to NVIDIA's 42.41x despite lower 15% growth rate. EV/EBITDA of 39.6x-79.88x (79% above 10-year median of 44.65x) is unjustified. Forward P/E of 51.02 still elevated. Trading at valuation premium to NVIDIA despite inferior market position (11% GPU share vs. 92%), creating paradoxical risk.",
-      "analyst_consensus": "Bullish with 79% buy/strong buy and 21% hold. Analysts cite 40% EPS growth potential and data center strength. No specific consensus price target provided, but 35%+ CAGR potential cited by some analysts.",
-      "catalysts_and_risks": "Positive catalysts: data center market share gains, EPYC processor adoption (50%+ growth in 2025), MI series AI chip wins, potential beneficiary of NVIDIA export restrictions. Risks: valuation compression if data center growth disappoints, execution risk on AI chips, still #2 player in GPU market, gaming segment weakness, customer concentration with hyperscalers.",
-      "fundamentals_rating": "Moderate",
-      "investment_grade": "B+",
-      "investment_thesis": "AMD offers attractive data center growth story and potential beneficiary of NVIDIA export restrictions, but current valuation of 71-80.5x P/E is unjustified relative to 15% revenue growth and 11% GPU market share; better entry point needed before initiating position."
-    },
-    {
-      "name": "Micron Technology",
-      "ticker": "MU",
-      "financial_health": "Exceptional profitability recovery with Q4 FY2025 revenue of $11.32B (+46% YoY) and FY2025 revenue of $37.38B (+48.85% YoY). EPS of $7.59 (+984.29% from $0.70 in 2024) reflects earnings explosion. Gross margin surpassed 50% threshold for first time since 2018 (Q4: 45.7%, +670 bps QoQ). Fortress balance sheet with D/E of 0.15 (improved -42.18%) and strong FCF of $3.72B annually.",
-      "valuation": "P/E of 31.47 reasonable for 48.85% revenue growth. Fairly valued at current levels with analyst consensus target of $556.05 implying -14% near-term pullback. Trading near 52-week highs; valuation reflects memory cycle strength. EV/EBITDA implied strong multiple given earnings recovery.",
-      "analyst_consensus": "Strong Buy rating across 44 analysts. Average price target of $556.05 implies -14% downside from $646.63. Wide target range ($249-$1,000) indicates valuation uncertainty. Consensus suggests near-term correction expected.",
-      "catalysts_and_risks": "Positive catalysts: HBM4 ramp (tied to NVIDIA Vera Rubin), continued AI memory demand, hyperscaler capex continuation, data center growth (56% of revenue). Material risks: customer concentration (NVIDIA HBM dependency), memory cycle peak risk, geopolitical headwinds, valuation compression if growth slows, tariff risks, supply chain vulnerabilities affecting fab capacity.",
-      "fundamentals_rating": "Strong",
-      "investment_grade": "B+",
-      "investment_thesis": "Micron is the best-positioned DRAM/HBM supplier riding the AI infrastructure wave with exceptional 48.85% revenue growth and margin expansion to 50%+, but current valuation near 52-week highs with analyst consensus target implying -14% downside suggests waiting for pullback; strong fundamentals warrant long-term accumulation at better prices."
-    },
-    {
-      "name": "MercadoLibre",
-      "ticker": "MELI",
-      "financial_health": "Strong profitability with Q4 2024 beat and FY2024 revenue up 30%+. EPS growing 43% with consistent beat pattern. Operating margin of 10.1% (Q4 2024), net profit surged 287% YoY to $639M. Operating cash flow of $12.12B demonstrates strong cash generation. Healthy balance sheet with minimal leverage.",
-      "valuation": "P/E of 45.99-57.04x represents significant premium to retail average of 24.88x but justified by 30%+ growth trajectory. P/S ratio of 3.18-3.22 reasonable for growth profile. Forward P/E of 35.21 more reasonable than trailing. Trading below 12-month P/E average of 53.29, suggesting valuation reset.",
-      "analyst_consensus": "Strong Buy with 87% buy/strong buy and 13% hold. Average 12-month price target of $3,000 implies significant upside. Consensus bullish on Latin America e-commerce and fintech growth.",
-      "catalysts_and_risks": "Positive catalysts: continued e-commerce penetration in Latin America, fintech expansion, cross-sell opportunities between marketplace and fintech. Risks: Latin America macro volatility, currency exposure, competitive pressure from global e-commerce platforms, regulatory risks in emerging markets.",
-      "fundamentals_rating": "Strong",
-      "investment_grade": "A",
-      "investment_thesis": "MercadoLibre is the dominant e-commerce and fintech platform in Latin America with strong 30%+ revenue growth, exceptional profitability (287% net income growth), and analyst consensus target of $3,000 implying substantial upside; pure-play exposure to high-growth emerging market with improving unit economics and fintech optionality."
-    },
-    {
-      "name": "CrowdStrike Holdings",
-      "ticker": "CRWD",
-      "financial_health": "Cybersecurity leader with strong market position. Institutional buying interest despite recent volatility. Company maintains strong competitive moat in endpoint protection and threat intelligence.",
-      "valuation": "Trading at $505.72 with institutional support. Valuation reflects market confidence in cybersecurity sector tailwinds and CrowdStrike's platform leadership.",
-      "analyst_consensus": "Institutional buying interest evident. Market recognizes strong competitive position despite recent stock volatility.",
-      "catalysts_and_risks": "Positive catalysts: continued cybersecurity spending, platform consolidation trend, threat landscape expansion. Risks: competitive pressure from Microsoft, Palo Alto Networks; execution on product roadmap; customer concentration.",
-      "fundamentals_rating": "Moderate",
-      "investment_grade": "B",
-      "investment_thesis": "CrowdStrike is a cybersecurity leader with strong market position and institutional backing, but current valuation and competitive pressures from larger players warrant cautious approach; suitable for risk-tolerant investors seeking cybersecurity exposure."
-    },
-    {
-      "name": "CoreWeave",
-      "ticker": "CRWV",
-      "financial_health": "Exceptional revenue growth with FY2025 revenue of $5.131B (+168% YoY) and Q4 2025 revenue of $1.572B (+110% YoY). Adjusted EBITDA margin of 57% demonstrates strong operational leverage. However, GAAP net loss of -$452M and interest expense surge to $388M (Q4) create profitability headwind. Free cash flow deeply negative due to $30-35B capex guidance for 2026.",
-      "valuation": "Trading at 10.66x P/S and 38.4x EV/EBITDA, representing significant premium to cloud infrastructure peers. Valuation implies aggressive growth assumptions and assumes company will achieve meaningful operating leverage. At current multiples, stock pricing in flawless execution.",
-      "analyst_consensus": "Mixed sentiment with 33% Strong Buy, 30% Buy, 30% Hold, 6% Sell. Average 12-month price target of $127-132 (vs. current $128.84) implies minimal upside. High dispersion (range $100-$200) indicates divided analyst opinion.",
-      "catalysts_and_risks": "Positive catalysts: continued AI adoption and GPU demand through 2026-2027, backlog conversion ($66.8B), operating leverage as revenue scales, NVIDIA's 5% ownership stake. Risk factors: unsustainable debt burden ($21.4B, 6.48x D/E), interest expense surge, negative FCF, unclear profitability timeline, customer concentration, GPU supply normalization expected 2029.",
-      "fundamentals_rating": "Moderate",
-      "investment_grade": "C+",
-      "investment_thesis": "CoreWeave is a specialized GPU infrastructure provider with exceptional 168% revenue growth and $66.8B backlog, but extreme valuation (10.66x P/S, 38.4x EV/EBITDA), unsustainable debt burden ($21.4B), and negative FCF create material risk; company must demonstrate positive FCF generation and debt stabilization before valuation is justified."
-    },
-    {
-      "name": "Cloudflare",
-      "ticker": "NET",
-      "financial_health": "Strong revenue growth of 30% YoY (FY2025: $2.167B) with healthy 74.5% gross margin typical of software platforms. Non-GAAP net income of $106.8M shows operational profitability, though GAAP net loss of -$102M reflects stock-based comp and amortization. Critical concern: free cash flow collapsed from $167M (2024) to ~$0M (2025) despite 30% growth, signaling cash generation deterioration.",
-      "valuation": "Trading at 32.1x EV/Revenue (LTM) and 35.2x forward EV/Revenue, representing significant premium to CDN and security peers (Akamai, Fastly). At these multiples, valuation implies sustained 30%+ growth and eventual margin expansion. Free cash flow deterioration is major red flag for valuation sustainability.",
-      "analyst_consensus": "Moderate Buy with average 12-month price target of $232.62, implying -8.5% downside from current $254.25. Wide analyst disagreement on fair value.",
-      "catalysts_and_risks": "Positive catalysts: developer platform adoption, Zero Trust security expansion, international growth (APAC), edge computing expansion, AI/ML inference opportunities. Risk factors: FCF deterioration (collapsed from $167M to $0M), valuation compression risk at 32x revenue, hyperscaler competition (AWS CloudFront, Google Cloud CDN, Azure edge), AI agent disruption (Anthropic managed agents caused 11% stock decline), macro sensitivity.",
-      "fundamentals_rating": "Moderate",
-      "investment_grade": "B-",
-      "investment_thesis": "Cloudflare is a quality business with excellent market position (22.4% reverse proxy/CDN share) and 30% revenue growth, but extreme valuation of 32x EV/Revenue combined with deteriorating free cash flow (collapsed to $0M in 2025) and hyperscaler competition create unfavorable risk/reward; HOLD existing positions but avoid initiating new ones at current price."
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "financial_health": "Revenue growth decelerating with Q1 2024 missing estimates at $21.3B vs $22.15B expected. EPS deteriorated significantly with Q1 2024 adjusted EPS of $0.45 missing $0.51 estimate. Profit margins compressed severely: net margin fell from 15.5% in 2023 to 7.26% in 2024 (800 bps decline). Gross and operating margins pressured by price competition and market saturation. Debt-to-equity extremely healthy at 0.09-0.19, well below industry average.",
+      "valuation": "P/E ratio at 377-412x (2025) is dramatically elevated and disconnected from fundamentals, up from 181.57x in 2024 and 52.53x in 2023. This is 15-20x higher than automotive/tech sector average of 15-25x. EV/EBITDA at 130.6x versus sector average of 40-50x, expanded from 96.4x in 2024. Valuation has expanded despite margin compression, indicating pure narrative-driven pricing rather than fundamental support.",
+      "analyst_consensus": "Mixed consensus from 26 analysts: 27% Strong Buy, 23% Buy, 35% Hold, 8% Sell, 8% Strong Sell. Average price target $398-410, implying 4-6% downside from current $425.82. High target $600, low target $24.86 shows wide dispersion and low conviction.",
+      "fundamentals_rating": "Weak",
+      "investment_grade": "D"
     },
     {
       "name": "Rocket Lab Corporation",
       "ticker": "RKLB",
-      "financial_health": "Strong revenue growth of 38.1% YoY (FY2025: $602M vs. FY2024: $436M) with dramatic gross margin expansion to 43% non-GAAP (+1100 bps YoY). Operating margin improving significantly to -15.2% (vs. -28.4% prior year) showing operational leverage. However, company remains unprofitable with EPS of -$0.09 GAAP and -$0.04 non-GAAP. Free cash flow still negative at -$89M despite growth, indicating cash burn continues.",
-      "valuation": "Extremely elevated at 62.4x EV/Revenue vs. aerospace/defense peers at 3-8x (1,850% premium). P/B of 28.2x vs. industry 2.5-4.0x. DCF intrinsic value estimates range $20-40/share vs. current $81.99, suggesting 47% overvaluation. Valuation unjustified without sustained 50%+ revenue growth for 10+ years.",
-      "analyst_consensus": "Moderate Buy with average price target of $83.31 (only 1.6% upside from $81.99). 79% bullish sentiment but targets lag market enthusiasm, indicating analyst skepticism. 35% Buy/Strong Buy, 47% Hold, 18% Sell/Strong Sell.",
-      "catalysts_and_risks": "Positive catalysts: Neutron first flight (H2 2026), Electron cadence acceleration to 20+ launches/year, government contracts (DoD/Space Force), margin expansion toward 43% non-GAAP. Risk factors: extreme 62.4x valuation multiple, persistent negative FCF (-$89M), Neutron delay extends cash burn, $1B dilutive equity offering signals management cash concern, competitive intensification from SpaceX/Blue Origin.",
+      "financial_health": "Strong revenue growth of $200.3M in Q1 2026 (+63.5% YoY) from low base. However, company remains unprofitable with Q1 2026 EPS of -$0.02 (beat loss estimate of -$0.04) and trailing EPS of -$0.37. Net margins deeply negative as company continues operating losses. Gross margins improving but insufficient to offset operating expenses. Free cash flow severely negative at -$321.8M TTM, deteriorating 177% YoY, indicating cash burn. Debt-to-equity low at 0.15-0.29, but $2.2B+ backlog is primary asset providing revenue visibility.",
+      "valuation": "Company unprofitable so P/E not applicable. Price/Sales multiple extremely high at 61.51x versus aerospace peers at 2-5x. EV/EBITDA meaningless at -240.49x due to negative EBITDA from operating losses. Entire valuation is speculative, based on future Neutron rocket potential and backlog conversion, not current earnings power.",
+      "analyst_consensus": "Moderate Buy rating from 14-22 analysts. Average price target $83-87.88, implying 10-13% downside from current $96.16. High target $120, low target $60 indicates moderate conviction with significant downside risk.",
       "fundamentals_rating": "Weak",
-      "investment_grade": "C",
-      "investment_thesis": "Rocket Lab is the dominant small-lift launch provider with impressive 38% revenue growth and $1.85B backlog, but trading at 62.4x EV/Revenue (1,850% above peers) with persistent negative FCF and Neutron delay extending profitability timeline; valuation has completely decoupled from fundamentals and warrants avoidance until significant correction to $35-45 range."
+      "investment_grade": "C"
     },
     {
-      "name": "SoundHound AI",
-      "ticker": "SOUN",
-      "financial_health": "Exceptional revenue growth of 99.5% YoY (FY2025: $169M vs. FY2024: $84.7M) with gross margin of 45.2% (healthy but below SaaS industry average of 60-75%). Operating margin deeply negative at -78% and net margin -89%, indicating company remains in investment phase. Free cash flow negative at -$103M despite revenue doubling, signaling cash burn continues. Strong balance sheet with $310M cash and minimal $4.4M debt.",
-      "valuation": "Trading at 22.97x P/S (FY2024) and 26.62x forward, representing 520% premium to
+      "name": "Oklo Inc.",
+      "ticker": "OKLO",
+      "financial_health": "Pre-revenue company with zero sales to date. Operating losses of $139.3M in 2025 with no offsetting revenue. TTM EPS of -$0.72 reflects pure cash burn. Gross margin, operating margin, and net margin all deeply negative as company has no commercial operations. However, balance sheet is fortress-like with $1.4B+ in cash and securities and zero debt, providing runway for development. Debt-to-equity 0%, indicating no financial leverage risk.",
+      "valuation": "P/E ratio of -110.97x is non-meaningful for pre-revenue company. EV/EBITDA irrelevant due to negative EBITDA. Market cap of $9.8B for zero-revenue company is entirely speculative, priced on NRC approval hopes and 2027-28 revenue projections. Valuation has no fundamental anchor and is pure narrative-driven betting on advanced nuclear technology and AI power demand.",
+      "analyst_consensus": "Strong Buy bias from 16 analysts: 56% Strong Buy, 25% Buy, 19% Hold. Average price target $87-102, implying 12-31% upside from current $78.01. High target $150 reflects bullish sentiment on regulatory approval, but consensus is speculative rather than fundamentals-based.",
+      "fundamentals_rating": "Weak",
+      "investment_grade": "D"
+    },
+    {
+      "name": "Cloudflare, Inc.",
+      "ticker": "NET",
+      "financial_health": "Strong revenue growth of $640M in Q1 2026 beating estimates, with FY 2025 revenue of $2,167.9M (+34% YoY) demonstrating consistent double-digit expansion. Q1 2026 adjusted EPS of $0.25 beat $0.23 estimate with FY 2025 guidance implying ~$1.19-1.20 non-GAAP EPS. However, operating margins remain negative at -9.6% to -14.3%, though improving trend evident. Net margin negative on GAAP basis, small positive on adjusted basis. Gross margins healthy and improving. Balance sheet strong with low leverage.",
+      "valuation": "P/E ratio at 207.5x LTM is extremely elevated despite 34% revenue growth. This is 709% higher than software sector median of 25-35x. EV/EBITDA at 144x versus sector average of 35-50x. EV/Revenue at 32.1x versus sector 5-8x for SaaS. Forward P/E estimates show -703x to -988x, indicating losses expected near-term. Valuation leaves minimal margin for error.",
+      "analyst_consensus": "Buy rating from 25 analysts. Average price target $232-234, implying 20% upside from current $194.2. High target $320 (HSBC). Consensus is constructive but modest upside relative to valuation risk.",
+      "fundamentals_rating": "Moderate",
+      "investment_grade": "B"
+    },
+    {
+      "name": "SoFi Technologies, Inc.",
+      "ticker": "SOFI",
+      "financial_health": "Exceptional revenue growth of $1.09B in Q1 2026 (+41% YoY), beating $1.05B estimate, with FY 2025 revenue of $2.9B. Most importantly, achieved 11 consecutive quarters of profitability with Q1 2026 EPS of $0.12 in line with estimates. Net margin of 11.84% positive and improving. Operating margin improving with clear path to higher profitability. Gross margins healthy for fintech sector. Debt-to-equity very healthy at 0.17-0.18 with low leverage and strong balance sheet.",
+      "valuation": "P/E ratio of 35.32-36.36x is reasonable and below fintech sector average of 40-50x. EV/EBITDA appears reasonable relative to growth profile. Valuation is appropriately priced relative to 41% revenue growth and improving profitability trajectory. Stock trading at discount to sector peers despite superior growth and profitability metrics.",
+      "analyst_consensus": "Hold rating from 15 analysts: 13% Strong Buy, 27% Buy, 47% Hold, 13% Sell. Average price target $21.25-$24.85, implying 33-56% upside from current $15.98. High target $31 (JP Morgan), low target $16. Consensus suggests meaningful upside with improving fundamentals.",
+      "fundamentals_rating": "Strong",
+      "investment_grade": "A"
+    },
+    {
+      "name": "Qualcomm Incorporated",
+      "ticker": "QCOM",
+      "financial_health": "Strong revenue generation with FY 2025 revenue of approximately $41.6B. EPS solid at $5.68-6.05 LTM, demonstrating earnings power. Operating margins healthy in 25-30% range for semiconductor segment. Net margins strong at 20%+. Free cash flow positive and substantial, supporting capital returns and R&D investment. Debt-to-equity moderate at 0.50-0.65, manageable for large-cap semiconductor company. Balance sheet strong with ability to fund AI/infrastructure initiatives.",
+      "valuation": "P/E ratio approximately 36-38x, in line with semiconductor sector average of 35-45x. EV/EBITDA in reasonable 12-15x range versus sector 10-18x. Valuation appropriate for quality semiconductor company with AI exposure and diversified end markets. Not stretched relative to peers or growth profile.",
+      "analyst_consensus": "Buy/Outperform rating from 30+ analysts. Daiwa recently upgraded to Outperform. Average price target $160-175, implying 27-41% downside from current $220.80. Consensus is constructive but price target suggests stock ahead of itself. Mixed conviction with some caution.",
+      "fundamentals_rating": "Strong",
+      "investment_grade": "A"
+    },
+    {
+      "name": "Cisco Systems, Inc.",
+      "ticker": "CSCO",
+      "financial_health": "Mature company with stable revenue of approximately $57.4B FY 2025. EPS solid at $3.30-3.50 LTM demonstrating consistent earnings. Operating margins healthy at 20-23% range. Net margins strong at 15-18%. Free cash flow positive and substantial at $11-12B annually, supporting dividends and buybacks. Debt-to-equity moderate at 0.40-0.50, well-managed for large-cap. Balance sheet strong with investment-grade credit rating.",
+      "valuation": "P/E ratio approximately 22-24x, below technology sector average of 25-35x. EV/EBITDA in 10-12x range, reasonable for mature tech company. Stock trading at modest discount to sector despite strong fundamentals and cash generation. Valuation is reasonable rather than stretched.",
+      "analyst_consensus": "Buy/Hold rating from 30+ analysts. Average price target $60-68, implying 35-65% downside from current $92.38. Consensus price target significantly below current price suggests caution. Mixed signals with recent analyst optimism on AI infrastructure not yet reflected in price targets.",
+      "fundamentals_rating": "Strong",
+      "investment_grade": "B"
+    },
+    {
+      "name": "Advanced Micro Devices, Inc.",
+      "ticker": "AMD",
+      "financial_health": "Exceptional revenue growth with Q1 2026 revenue of $10.253B (+37.9% YoY), significantly beating estimates. Strong EPS generation with Q1 2026 EPS of $1.49 adjusted. Operating margins healthy at 20-22% range and improving. Net margins strong at 18-20%. Free cash flow positive and growing, supporting R&D investment in data center and AI products. Debt-to-equity low at 0.15-0.25, very healthy. Balance sheet strong with substantial cash position.",
+      "valuation": "P/E ratio approximately 32-35x on forward basis, in line with semiconductor sector average of 30-40x. EV/EBITDA in 12-14x range, reasonable for high-growth semiconductor company. Valuation appropriate for 37.9% revenue growth and improving margins. Stock trading fairly valued relative to growth and profitability metrics.",
+      "analyst_consensus": "Buy/Outperform rating from 35+ analysts. Average price target $165-185, implying 62-79% downside from current $435.0. Consensus price targets significantly below current price despite strong Q1 results and raised guidance. Analyst targets suggest stock substantially overvalued relative to fundamentals.",
+      "fundamentals_rating": "Strong",
+      "investment_grade": "B"
+    },
+    {
+      "name": "Fluor Corporation",
+      "ticker": "FLR",
+      "financial_health": "Solid revenue generation with FY 2025 revenue approximately $20.8B. EPS of $2.10-2.40 LTM demonstrates profitability recovery. Operating margins in 5-7% range, improving from prior years. Net margins 3-4%, reflecting capital-intensive nature of engineering/construction. Free cash flow positive but moderate, typical for project-based business. Debt-to-equity moderate at 0.35-0.45, manageable for industrial contractor. Balance sheet improving with project backlog providing revenue visibility.",
+      "valuation": "P/E ratio approximately 18-21x, below engineering/construction sector average of 22-28x. EV/EBITDA in 8-10x range, reasonable for cyclical industrial company. Stock trading at discount to sector peers despite analyst consensus Buy with 67% Strong Buy ratings. Valuation appears attractive relative to industrial sector rotation thesis.",
+      "analyst_consensus": "Strong Buy consensus from 15+ analysts: 67% Strong Buy rating. Average price target $55-65, implying 25-48% upside from current $43.88. Consensus is constructive with strong conviction on industrial sector rotation and infrastructure/energy project pipeline strength.",
+      "fundamentals_rating": "Moderate",
+      "investment_grade": "B"
+    },
+    {
+      "name": "Krystal Biotech, Inc.",
+      "ticker": "KRYS",
+      "financial_health": "Strong revenue growth with Vyjuvek sales up 32% YoY in Q1 2026. Achieved 11 consecutive quarters of profitability, demonstrating consistent earnings power. Exceptional gross margin of 95%, indicating strong pricing power and low manufacturing costs for gene therapy product. Operating margins positive and healthy. Net margins strong at 30%+. Free cash flow positive, supporting R&D pipeline investment. Debt-to-equity very low, indicating minimal financial leverage.",
+      "valuation": "P/E ratio approximately 65-75x on forward basis, above biotechnology sector average of 40-50x. However, justified by 32% revenue growth, 95% gross margins, and consistent profitability. EV/EBITDA in 25-30x range, reasonable for high-margin biotech company with proven product and strong pipeline. Valuation premium to sector reflects superior execution and profitability.",
+      "analyst_consensus": "Buy/Outperform rating from 15+ analysts. Average price target $320-350, implying 7-17% upside from current $298.99. Consensus constructive but modest upside relative to valuation. High conviction on Vyjuvek adoption and 2026-27 pipeline catalysts.",
+      "fundamentals_rating": "Strong",
+      "investment_grade": "A"
+    }
+  ]
+}
+```
