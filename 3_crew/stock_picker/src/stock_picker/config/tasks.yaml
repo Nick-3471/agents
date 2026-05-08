@@ -1,29 +1,87 @@
-find_trending_companies:
+stock_research_task:
   description: >
-    Find the top trending companies in the news in {sector} by searching the latest news. Find new companies that you've not found before.
+    Search for and identify exactly the top 10 most trending companies in the stock market
+    right now. Analyze market momentum, news sentiment, social media buzz, unusual trading
+    volume, and sector rotation patterns to surface companies gaining significant attention
+    and upward momentum. Look across all sectors and market caps. Focus on companies
+    that have strong catalysts driving their trend such as earnings beats, product
+    launches, partnerships, regulatory approvals, or macroeconomic tailwinds.
+    IMPORTANT: Stop searching as soon as you have identified the top 10 companies.
+    Do NOT continue researching, expanding, or adding to the list beyond 10. Return
+    the list immediately once 10 qualifying companies are found.
   expected_output: >
-    A list of trending companies in {sector}
-  agent: trending_company_finder
-  output_file: output/trending_companies.json
+    A JSON object matching the TrendingCompanyList schema with a single key `companies`
+    that is a list of exactly 10 TrendingCompany objects (no more, no fewer). Each
+    TrendingCompany must contain:
+    - name: Company name
+    - ticker: Stock ticker symbol
+    - current_price: Current stock price in USD (number)
+    - price_change_pct: Recent price change as a percentage (number)
+    - reason: Primary reason the company is trending
+    - sector: Sector the company belongs to
+    - market_cap_category: One of "small", "mid", or "large"
+    - confidence_score: Integer from 1 to 10 indicating strength of the trend
+  agent: stock_researcher
+  output_file: output/StockResearch.json
 
-research_trending_companies:
+financial_analysis_task:
   description: >
-    Given a list of trending companies, provide detailed analysis of each company in a report by searching online
+    Take the list of exactly 10 trending companies provided by the stock researcher and
+    conduct a comprehensive financial analysis on each one. Analyze only the 10 companies
+    handed to you — do not search for or add additional companies. Stop once all 10 have
+    been analyzed. For every company evaluate:
+    revenue growth, earnings per share (EPS), profit margins, debt-to-equity ratio,
+    price-to-earnings (P/E) ratio, EV/EBITDA, free cash flow, and analyst price targets.
+    Assess the competitive landscape, recent earnings history, upcoming catalysts,
+    and any red flags such as insider selling, dilution, or regulatory risk.
+    Compare each company against its sector peers. Your analysis should give a
+    clear picture of whether the trend is backed by strong fundamentals or is
+    purely hype-driven.
   expected_output: >
-    A report containing detailed analysis of each company
-  agent: financial_researcher
+    A JSON object matching the TrendingCompanyResearchList schema with a single key
+    `research_list` containing one TrendingCompanyResearch object per company (all 10).
+    Each TrendingCompanyResearch must contain:
+    - name: Company name
+    - ticker: Stock ticker symbol
+    - financial_health: Summary covering revenue, EPS, margins, and debt
+    - valuation: Assessment including P/E and EV/EBITDA versus sector average
+    - analyst_consensus: Analyst consensus rating and average price target
+    - catalysts_and_risks: Key upcoming catalysts and material risks
+    - fundamentals_rating: One of "Strong", "Moderate", or "Weak"
+    - investment_grade: One of "A", "B", "C", or "D"
+    - investment_thesis: A 2-3 sentence investment thesis summary
+  agent: financial_analyst
   context:
-    - find_trending_companies
-  output_file: output/research_report.json
+    - stock_research_task
+  output_file: output/FinancialAnalysis.json
 
-pick_best_company:
+stock_picking_task:
   description: >
-    Analyze the research findings and pick the best company for investment.
-    Send a push notification to the user with the decision and 1 sentence rationale.
-    Then respond with a detailed report on why you chose this company, and which companies were not selected.
+    Review the trending companies and their comprehensive financial analyses to
+    select the top stock picks worthy of investment. Apply a strict selection
+    criteria prioritizing companies with strong fundamentals, clear catalysts,
+    favorable valuations, and high trend conviction. You MUST ensure no company
+    appears more than once in your final picks list — cross-check every selection
+    before adding it. Aim for diversification across sectors where possible.
+    Eliminate any companies rated C or D from consideration. Rank your final
+    selections from highest to lowest conviction. Include a portfolio-level
+    summary explaining the overall theme and balance of your picks.
   expected_output: >
-    The chosen company and why it was chosen; the companies that were not selected and why they were not selected.
+    A final stock picks report containing:
+    - Top 5 stock picks ranked by conviction (highest to lowest)
+    - For each pick:
+        * Company name and ticker symbol
+        * Conviction level (High / Medium)
+        * Entry price range suggestion
+        * Short-term target price (1-3 months)
+        * Key risk to the thesis
+        * One sentence buy rationale
+    - Confirmation that zero duplicate companies exist in the list
+    - A brief portfolio summary (3-5 sentences) covering sector diversity,
+      overall risk profile, and the market theme driving the selections
   agent: stock_picker
   context:
-    - research_trending_companies
-  output_file: output/decision.md
+    - stock_research_task
+    - financial_analysis_task
+  output_file: output/StockPicks.json
+  
