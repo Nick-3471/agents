@@ -1,10 +1,11 @@
-from crewai import Agent, Crew, Process, Task, LLM
+from crewai import Agent, Crew, Process, Task, LLM, Memory, memory
 from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
 from crewai_tools import SerperDevTool
 from pydantic import BaseModel, Field
 from typing import List
 from .tools.push_tool import PushNotificationTool
+
 
 
 class TrendingCompany(BaseModel):
@@ -45,6 +46,7 @@ class StockPicker():
 
     agents: list[BaseAgent]
     tasks: list[Task]
+    memory = Memory()
 
     llm = LLM(
         model="anthropic/claude-haiku-4-5-20251001",
@@ -61,6 +63,7 @@ class StockPicker():
             config=self.agents_config['stock_researcher'],
             tools=[SerperDevTool()],
             llm=self.llm,
+            memory=True,
         )
         
     @agent
@@ -69,6 +72,7 @@ class StockPicker():
             config=self.agents_config['financial_analyst'],
             tools=[SerperDevTool()],
             llm=self.llm,
+            memory=True,
         )
     
     @agent
@@ -77,6 +81,7 @@ class StockPicker():
             config=self.agents_config['stock_picker'],
             llm=self.llm,
             tools=[PushNotificationTool()],
+            memory=True,
         )
 
     @task
@@ -108,10 +113,16 @@ class StockPicker():
             allow_delegation=True,
             llm=self.llm,
         )
+
+
         return Crew(
             agents=self.agents,
             tasks=self.tasks,
             process=Process.hierarchical,
             verbose=True,
             manager_agent=manager,
+            memory=True,
+            # short_term_memory=short_term_memory,
+            # long_term_memory=long_term_memory,
+            # entity_memory=entity_memory,
         )

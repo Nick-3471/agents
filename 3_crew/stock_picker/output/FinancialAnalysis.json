@@ -1,96 +1,110 @@
+I now have complete financial analysis for all 15 companies. Let me compile the comprehensive final answer combining both sets of research.
+
 ```json
 {
   "research_list": [
     {
-      "name": "Tesla, Inc.",
-      "ticker": "TSLA",
-      "financial_health": "Revenue growth decelerating with Q1 2024 missing estimates at $21.3B vs $22.15B expected. EPS deteriorated significantly with Q1 2024 adjusted EPS of $0.45 missing $0.51 estimate. Profit margins compressed severely: net margin fell from 15.5% in 2023 to 7.26% in 2024 (800 bps decline). Gross and operating margins pressured by price competition and market saturation. Debt-to-equity extremely healthy at 0.09-0.19, well below industry average.",
-      "valuation": "P/E ratio at 377-412x (2025) is dramatically elevated and disconnected from fundamentals, up from 181.57x in 2024 and 52.53x in 2023. This is 15-20x higher than automotive/tech sector average of 15-25x. EV/EBITDA at 130.6x versus sector average of 40-50x, expanded from 96.4x in 2024. Valuation has expanded despite margin compression, indicating pure narrative-driven pricing rather than fundamental support.",
-      "analyst_consensus": "Mixed consensus from 26 analysts: 27% Strong Buy, 23% Buy, 35% Hold, 8% Sell, 8% Strong Sell. Average price target $398-410, implying 4-6% downside from current $425.82. High target $600, low target $24.86 shows wide dispersion and low conviction.",
+      "name": "Hims & Hers Health",
+      "ticker": "HIMS",
+      "financial_health": "Strong revenue growth of 59% YoY in 2025 ($2.35B), with net income of $128M and adjusted EBITDA of $318M. However, profitability is modest at 5.47% net margin. Debt levels appear manageable. Q3 2025 showed 49% YoY revenue growth. Company faces regulatory headwinds from FDA crackdown on compounded GLP-1 medications, which represents significant revenue exposure.",
+      "valuation": "Trading at elevated forward P/E of 40.27x and FWD EV/EBITDA of 16.23x-38.26x, well above healthcare sector average of ~16x P/E. Valuation is stretched relative to growth profile and regulatory risks. Current price of $28.27 reflects significant premium.",
+      "analyst_consensus": "Mixed consensus with Hold rating from 18 brokers (1 sell, 13 hold, 4 buy). Average price target of $25-31.24 implies limited upside from current levels. Some analysts like BTIG maintain Buy but with reduced targets ($60 from $85).",
+      "fundamentals_rating": "Moderate",
+      "investment_grade": "B"
+    },
+    {
+      "name": "Moderna Inc.",
+      "ticker": "MRNA",
+      "financial_health": "Severe deterioration: FY2025 revenue of $1.9B (down 40% YoY), net loss of $826M, EPS of -$2.11. Gross margin collapsed to 22.11%, operating margin at -153.35%. Company is burning cash with accumulated deficit and negative cash flow. Q2 2025 revenue only $142M (down 41% YoY). R&D spending elevated at $33.7M in 2025.",
+      "valuation": "Trading at negative P/E (unprofitable). EV/EBITDA is meaningless given negative EBITDA. Company trades at depressed valuations reflecting distress. Current price of $54.35 may be overvalued given fundamental deterioration.",
+      "analyst_consensus": "Consensus Hold with 67% of analysts suggesting hold, 25% sell, 8% buy. Average price target of $43.37-49.28 implies 10-20% downside from current levels. Analyst sentiment has turned decidedly negative.",
       "fundamentals_rating": "Weak",
       "investment_grade": "D"
     },
     {
-      "name": "Rocket Lab Corporation",
-      "ticker": "RKLB",
-      "financial_health": "Strong revenue growth of $200.3M in Q1 2026 (+63.5% YoY) from low base. However, company remains unprofitable with Q1 2026 EPS of -$0.02 (beat loss estimate of -$0.04) and trailing EPS of -$0.37. Net margins deeply negative as company continues operating losses. Gross margins improving but insufficient to offset operating expenses. Free cash flow severely negative at -$321.8M TTM, deteriorating 177% YoY, indicating cash burn. Debt-to-equity low at 0.15-0.29, but $2.2B+ backlog is primary asset providing revenue visibility.",
-      "valuation": "Company unprofitable so P/E not applicable. Price/Sales multiple extremely high at 61.51x versus aerospace peers at 2-5x. EV/EBITDA meaningless at -240.49x due to negative EBITDA from operating losses. Entire valuation is speculative, based on future Neutron rocket potential and backlog conversion, not current earnings power.",
-      "analyst_consensus": "Moderate Buy rating from 14-22 analysts. Average price target $83-87.88, implying 10-13% downside from current $96.16. High target $120, low target $60 indicates moderate conviction with significant downside risk.",
+      "name": "Intel Corporation",
+      "ticker": "INTC",
+      "financial_health": "Stagnant growth with FY2025 revenue of $52.9B (flat YoY), Q4 2025 revenue down 4% YoY at $13.7B. Company posted GAAP net loss of $885M in FY2025 (-$1.02 EPS), though non-GAAP metrics better. Debt-to-equity of 0.40 is reasonable. Massive capex requirements for foundry business create cash flow strain. Free cash flow pressured.",
+      "valuation": "Extremely elevated EV/EBITDA of 48.27x-59.82x (643% above 10Y median of 8.05x), indicating severe overvaluation. P/E ratios are inflated by low earnings. Valuation disconnected from fundamentals. Current price of $124.89 reflects speculative fervor, not fundamentals.",
+      "analyst_consensus": "Consensus remains mixed with average price target of $38.31-75.64. Significant disconnect between bullish and bearish views. Morgan Stanley raised target to $56, but Motley Fool estimates fair value at $38. Market pricing in unrealistic turnaround scenario.",
       "fundamentals_rating": "Weak",
       "investment_grade": "C"
     },
     {
-      "name": "Oklo Inc.",
-      "ticker": "OKLO",
-      "financial_health": "Pre-revenue company with zero sales to date. Operating losses of $139.3M in 2025 with no offsetting revenue. TTM EPS of -$0.72 reflects pure cash burn. Gross margin, operating margin, and net margin all deeply negative as company has no commercial operations. However, balance sheet is fortress-like with $1.4B+ in cash and securities and zero debt, providing runway for development. Debt-to-equity 0%, indicating no financial leverage risk.",
-      "valuation": "P/E ratio of -110.97x is non-meaningful for pre-revenue company. EV/EBITDA irrelevant due to negative EBITDA. Market cap of $9.8B for zero-revenue company is entirely speculative, priced on NRC approval hopes and 2027-28 revenue projections. Valuation has no fundamental anchor and is pure narrative-driven betting on advanced nuclear technology and AI power demand.",
-      "analyst_consensus": "Strong Buy bias from 16 analysts: 56% Strong Buy, 25% Buy, 19% Hold. Average price target $87-102, implying 12-31% upside from current $78.01. High target $150 reflects bullish sentiment on regulatory approval, but consensus is speculative rather than fundamentals-based.",
+      "name": "IonQ Inc.",
+      "ticker": "IONQ",
+      "financial_health": "Exceptional revenue growth of 202% YoY in 2025 to $130M (beat guidance by 20%). Company still unprofitable with negative earnings, but showing operational leverage. Q3 2025 revenue growth of 222% YoY demonstrates strong commercial traction. Adjusted EBITDA losses expected to widen to $310-330M in 2026 as investments remain elevated.",
+      "valuation": "Trading at extreme multiples with P/E of 54.4x (vs. peer average of -0.1x for unprofitable peers). EV/EBITDA not meaningful given negative EBITDA. Price reflects quantum computing hype and long-term potential rather than current fundamentals. Current price of $49.24 appears speculative.",
+      "analyst_consensus": "Bullish consensus with 17 analysts averaging $68.63 price target (39% upside). Median target of $63 suggests moderate upside. However, this is a growth-at-any-price valuation with high risk. Rosenblatt issued $100 target (outlier).",
+      "fundamentals_rating": "Moderate",
+      "investment_grade": "C"
+    },
+    {
+      "name": "Marvell Technology",
+      "ticker": "MRVL",
+      "financial_health": "Strong turnaround with FY2025 revenue of $5.77B (up 4.7% YoY) and dramatic profitability improvement. FY2026 revenue expected ~$8.19B (up 42% YoY) with net income of $2.67B and 33% profit margin. EPS of $3.13 (TTM) vs. -$1.70 in 2024 shows exceptional swing. Data center and AI exposure driving growth. Debt levels manageable.",
+      "valuation": "Trading at EV/EBITDA of 31.22x (near 10Y median of 33.20x), indicating fair valuation relative to growth. P/E multiples reasonable for growth profile. Current price of $170.13 reflects strong fundamentals and AI tailwinds. Valuation appears justified by earnings growth.",
+      "analyst_consensus": "Strong Buy consensus from 32 analysts with 47% Strong Buy, 34% Buy. Average price target of $121.29-126.37 with high of $195. Consensus rating is Buy with multiple price target increases. Market pricing in sustained AI demand.",
+      "fundamentals_rating": "Strong",
+      "investment_grade": "A"
+    },
+    {
+      "name": "Plug Power Inc.",
+      "ticker": "PLUG",
+      "financial_health": "Marginal improvement with FY2025 revenue of $710M (up 13% from $629M in 2024), but still below $891M peak in 2023. Company achieved positive gross margin in Q4 2025 for first time in years, but remains unprofitable with net loss of $1.7B in 2025 and accumulated deficit of $8.2B. Free cash flow remains negative. Debt of $703.5M with tight liquidity.",
+      "valuation": "EV/EBITDA of -7.55x (negative, reflecting losses). Stock trades at distressed valuation due to persistent unprofitability. Current price of $3.12 reflects massive decline from historical highs. Valuation reflects skepticism about profitability timeline.",
+      "analyst_consensus": "Consensus Hold with mixed views. Average price target of $2.71-3.03 implies downside from current levels. 20% Strong Buy, 50% Hold, 30% Sell suggests divided opinion. Some see path to profitability by 2028, others remain skeptical.",
       "fundamentals_rating": "Weak",
       "investment_grade": "D"
     },
     {
-      "name": "Cloudflare, Inc.",
-      "ticker": "NET",
-      "financial_health": "Strong revenue growth of $640M in Q1 2026 beating estimates, with FY 2025 revenue of $2,167.9M (+34% YoY) demonstrating consistent double-digit expansion. Q1 2026 adjusted EPS of $0.25 beat $0.23 estimate with FY 2025 guidance implying ~$1.19-1.20 non-GAAP EPS. However, operating margins remain negative at -9.6% to -14.3%, though improving trend evident. Net margin negative on GAAP basis, small positive on adjusted basis. Gross margins healthy and improving. Balance sheet strong with low leverage.",
-      "valuation": "P/E ratio at 207.5x LTM is extremely elevated despite 34% revenue growth. This is 709% higher than software sector median of 25-35x. EV/EBITDA at 144x versus sector average of 35-50x. EV/Revenue at 32.1x versus sector 5-8x for SaaS. Forward P/E estimates show -703x to -988x, indicating losses expected near-term. Valuation leaves minimal margin for error.",
-      "analyst_consensus": "Buy rating from 25 analysts. Average price target $232-234, implying 20% upside from current $194.2. High target $320 (HSBC). Consensus is constructive but modest upside relative to valuation risk.",
+      "name": "Carnival Corporation",
+      "ticker": "CCL",
+      "financial_health": "Strong recovery with record FY2025 revenue and net income of $2.8B (record adjusted net income of $3.1B, up 60%). Q1 2026 showed $258M net income on $6.17B revenue (up 6.1% YoY). Debt reduced to $26B from higher levels, achieving investment-grade leverage metrics. Strong liquidity of $5.9B. Gross margin pressured in Q4 at 40.10% vs. 63.43% in Q3.",
+      "valuation": "Trading at attractive forward P/E of 10.5x and EV/EBITDA of 8.60x (near 10Y median of 9.14x). Valuation is reasonable relative to cyclical recovery. Current price of $26.47 appears undervalued relative to earnings power and dividend reinstatement.",
+      "analyst_consensus": "Buy consensus from 21 analysts with 50% Strong Buy, 32% Buy. Average price target of $33.86-34.37 implies 25-30% upside. Consensus is constructive with improving outlook for 2026.",
+      "fundamentals_rating": "Strong",
+      "investment_grade": "A"
+    },
+    {
+      "name": "Warner Bros. Discovery",
+      "ticker": "WBD",
+      "financial_health": "Challenging with FY2025 revenue of $37.3B (down 5.15% from $39.3B in 2024). Company swung to $727M profit in 2025 but Q4 2025 posted net loss of $252M. Free cash flow declined significantly. Net debt reached $29B. EBITDA collapsed from $22.5B in 2023 to $11B in 2024 and $10.95B in 2025 (51% decline). Streaming losses continue to pressure profitability.",
+      "valuation": "Valuation metrics concerning with declining profitability. EV/EBITDA and P/E ratios compressed due to earnings decline. Current price of $27.04 reflects market skepticism about streaming turnaround. Trading below many analyst targets.",
+      "analyst_consensus": "Consensus Hold with 2 sell, 13 hold, 7 buy, 1 strong buy from 23 analysts. Average price target of $19.32-26.30 with high of $31. Analyst sentiment mixed with significant downside risk from some estimates.",
+      "fundamentals_rating": "Weak",
+      "investment_grade": "C"
+    },
+    {
+      "name": "Sprouts Farmers Market",
+      "ticker": "SFM",
+      "financial_health": "Solid growth with FY2025 net sales of $8.8B (up 14% from prior year). Diluted EPS of $5.31 (up 41.6% YoY), demonstrating strong earnings leverage. Q1 2026 EPS of $1.71 beat estimates. FY2026 guidance of 10.5% sales growth and $5.28-5.44 EPS is healthy. Margins stable. Company executing well on expansion.",
+      "valuation": "Trading at EV/EBITDA of 9.66x (near 10Y median of 10.04x), indicating fair valuation. P/E multiples reasonable for growth profile. Current price of $82.83 appears fairly valued relative to earnings growth and sector peers.",
+      "analyst_consensus": "Consensus Hold with 7 hold, 7 buy, 1 sell from 15 analysts. Average price target of $96.08-99.89 implies 15-20% upside. Analyst sentiment cautious due to softer traffic trends and margin pressure expectations.",
+      "fundamentals_rating": "Strong",
+      "investment_grade": "B"
+    },
+    {
+      "name": "Navitas Semiconductor",
+      "ticker": "NVTS",
+      "financial_health": "Severe deterioration with FY2025 revenue of $45.9M (down 44.9% from $83.3M in 2024). Company remains unprofitable with adjusted loss of ~$41M in 2025. Q4 2025 revenue collapsed to $7.3M from $21.7M in Q3 2024. Gross margin of 31% insufficient to cover operating expenses of $103.9M. Company pivoting away from legacy business with uncertain results.",
+      "valuation": "Trading at negative P/E (-30.80x) reflecting losses. Fair value estimates around $8-13 from analysts suggest current price of $22.18 is significantly overvalued. Market cap of $3B+ disconnected from $46M revenue base.",
+      "analyst_consensus": "Consensus Hold with cautious outlook. Average price target of $12.87 implies 42% downside from current levels. Analysts cite business transition risks and continued losses through 2028.",
+      "fundamentals_rating": "Weak",
+      "investment_grade": "D"
+    },
+    {
+      "name": "Roku Inc.",
+      "ticker": "ROKU",
+      "financial_health": "Roku has demonstrated strong operational recovery with Q1 2026 revenue of $1.25B (+22% YoY), exceeding consensus by 3.7%. Net income reached $85.7M with EPS of $0.57 (vs. $0.35 consensus), marking a return to profitability. Free cash flow of $538.8M over trailing twelve months shows robust cash generation. Platform revenue grew 28% YoY. However, the company carries debt and previously struggled with profitability. Current EPS (TTM) is $1.33 with trailing P/E of 97.39, indicating elevated valuation despite improved fundamentals.",
+      "valuation": "Roku trades at a P/E of 97.39 (TTM), significantly above the industry average of 22.36. EV/EBITDA decreased from 31.42x in Q4 2025 to 20.41x in Q1 2026, showing valuation compression. Forward P/E expectations suggest continued premium valuation. Price-to-FCF ratio of 36.41 is 52% below its 10-year median of 75.55, indicating more reasonable FCF valuation. The stock is considered overvalued on traditional metrics but shows improving efficiency.",
+      "analyst_consensus": "Analyst consensus is strongly bullish with a median price target of $140.00 (15.8% upside from current levels). Multiple analysts including Guggenheim (raised target to $130 from $115) and BofA (raised target to $150 from $140) maintain Buy ratings. Benchmark and Pivotal Research reiterate Buy ratings. Overall analyst rating: Strong Buy (9.0/10 score). 25+ Buy ratings support the stock.",
       "fundamentals_rating": "Moderate",
       "investment_grade": "B"
     },
     {
-      "name": "SoFi Technologies, Inc.",
-      "ticker": "SOFI",
-      "financial_health": "Exceptional revenue growth of $1.09B in Q1 2026 (+41% YoY), beating $1.05B estimate, with FY 2025 revenue of $2.9B. Most importantly, achieved 11 consecutive quarters of profitability with Q1 2026 EPS of $0.12 in line with estimates. Net margin of 11.84% positive and improving. Operating margin improving with clear path to higher profitability. Gross margins healthy for fintech sector. Debt-to-equity very healthy at 0.17-0.18 with low leverage and strong balance sheet.",
-      "valuation": "P/E ratio of 35.32-36.36x is reasonable and below fintech sector average of 40-50x. EV/EBITDA appears reasonable relative to growth profile. Valuation is appropriately priced relative to 41% revenue growth and improving profitability trajectory. Stock trading at discount to sector peers despite superior growth and profitability metrics.",
-      "analyst_consensus": "Hold rating from 15 analysts: 13% Strong Buy, 27% Buy, 47% Hold, 13% Sell. Average price target $21.25-$24.85, implying 33-56% upside from current $15.98. High target $31 (JP Morgan), low target $16. Consensus suggests meaningful upside with improving fundamentals.",
-      "fundamentals_rating": "Strong",
-      "investment_grade": "A"
-    },
-    {
-      "name": "Qualcomm Incorporated",
-      "ticker": "QCOM",
-      "financial_health": "Strong revenue generation with FY 2025 revenue of approximately $41.6B. EPS solid at $5.68-6.05 LTM, demonstrating earnings power. Operating margins healthy in 25-30% range for semiconductor segment. Net margins strong at 20%+. Free cash flow positive and substantial, supporting capital returns and R&D investment. Debt-to-equity moderate at 0.50-0.65, manageable for large-cap semiconductor company. Balance sheet strong with ability to fund AI/infrastructure initiatives.",
-      "valuation": "P/E ratio approximately 36-38x, in line with semiconductor sector average of 35-45x. EV/EBITDA in reasonable 12-15x range versus sector 10-18x. Valuation appropriate for quality semiconductor company with AI exposure and diversified end markets. Not stretched relative to peers or growth profile.",
-      "analyst_consensus": "Buy/Outperform rating from 30+ analysts. Daiwa recently upgraded to Outperform. Average price target $160-175, implying 27-41% downside from current $220.80. Consensus is constructive but price target suggests stock ahead of itself. Mixed conviction with some caution.",
-      "fundamentals_rating": "Strong",
-      "investment_grade": "A"
-    },
-    {
-      "name": "Cisco Systems, Inc.",
-      "ticker": "CSCO",
-      "financial_health": "Mature company with stable revenue of approximately $57.4B FY 2025. EPS solid at $3.30-3.50 LTM demonstrating consistent earnings. Operating margins healthy at 20-23% range. Net margins strong at 15-18%. Free cash flow positive and substantial at $11-12B annually, supporting dividends and buybacks. Debt-to-equity moderate at 0.40-0.50, well-managed for large-cap. Balance sheet strong with investment-grade credit rating.",
-      "valuation": "P/E ratio approximately 22-24x, below technology sector average of 25-35x. EV/EBITDA in 10-12x range, reasonable for mature tech company. Stock trading at modest discount to sector despite strong fundamentals and cash generation. Valuation is reasonable rather than stretched.",
-      "analyst_consensus": "Buy/Hold rating from 30+ analysts. Average price target $60-68, implying 35-65% downside from current $92.38. Consensus price target significantly below current price suggests caution. Mixed signals with recent analyst optimism on AI infrastructure not yet reflected in price targets.",
-      "fundamentals_rating": "Strong",
-      "investment_grade": "B"
-    },
-    {
-      "name": "Advanced Micro Devices, Inc.",
-      "ticker": "AMD",
-      "financial_health": "Exceptional revenue growth with Q1 2026 revenue of $10.253B (+37.9% YoY), significantly beating estimates. Strong EPS generation with Q1 2026 EPS of $1.49 adjusted. Operating margins healthy at 20-22% range and improving. Net margins strong at 18-20%. Free cash flow positive and growing, supporting R&D investment in data center and AI products. Debt-to-equity low at 0.15-0.25, very healthy. Balance sheet strong with substantial cash position.",
-      "valuation": "P/E ratio approximately 32-35x on forward basis, in line with semiconductor sector average of 30-40x. EV/EBITDA in 12-14x range, reasonable for high-growth semiconductor company. Valuation appropriate for 37.9% revenue growth and improving margins. Stock trading fairly valued relative to growth and profitability metrics.",
-      "analyst_consensus": "Buy/Outperform rating from 35+ analysts. Average price target $165-185, implying 62-79% downside from current $435.0. Consensus price targets significantly below current price despite strong Q1 results and raised guidance. Analyst targets suggest stock substantially overvalued relative to fundamentals.",
-      "fundamentals_rating": "Strong",
-      "investment_grade": "B"
-    },
-    {
-      "name": "Fluor Corporation",
-      "ticker": "FLR",
-      "financial_health": "Solid revenue generation with FY 2025 revenue approximately $20.8B. EPS of $2.10-2.40 LTM demonstrates profitability recovery. Operating margins in 5-7% range, improving from prior years. Net margins 3-4%, reflecting capital-intensive nature of engineering/construction. Free cash flow positive but moderate, typical for project-based business. Debt-to-equity moderate at 0.35-0.45, manageable for industrial contractor. Balance sheet improving with project backlog providing revenue visibility.",
-      "valuation": "P/E ratio approximately 18-21x, below engineering/construction sector average of 22-28x. EV/EBITDA in 8-10x range, reasonable for cyclical industrial company. Stock trading at discount to sector peers despite analyst consensus Buy with 67% Strong Buy ratings. Valuation appears attractive relative to industrial sector rotation thesis.",
-      "analyst_consensus": "Strong Buy consensus from 15+ analysts: 67% Strong Buy rating. Average price target $55-65, implying 25-48% upside from current $43.88. Consensus is constructive with strong conviction on industrial sector rotation and infrastructure/energy project pipeline strength.",
-      "fundamentals_rating": "Moderate",
-      "investment_grade": "B"
-    },
-    {
-      "name": "Krystal Biotech, Inc.",
-      "ticker": "KRYS",
-      "financial_health": "Strong revenue growth with Vyjuvek sales up 32% YoY in Q1 2026. Achieved 11 consecutive quarters of profitability, demonstrating consistent earnings power. Exceptional gross margin of 95%, indicating strong pricing power and low manufacturing costs for gene therapy product. Operating margins positive and healthy. Net margins strong at 30%+. Free cash flow positive, supporting R&D pipeline investment. Debt-to-equity very low, indicating minimal financial leverage.",
-      "valuation": "P/E ratio approximately 65-75x on forward basis, above biotechnology sector average of 40-50x. However, justified by 32% revenue growth, 95% gross margins, and consistent profitability. EV/EBITDA in 25-30x range, reasonable for high-margin biotech company with proven product and strong pipeline. Valuation premium to sector reflects superior execution and profitability.",
-      "analyst_consensus": "Buy/Outperform rating from 15+ analysts. Average price target $320-350, implying 7-17% upside from current $298.99. Consensus constructive but modest upside relative to valuation. High conviction on Vyjuvek adoption and 2026-27 pipeline catalysts.",
-      "fundamentals_rating": "Strong",
-      "investment_grade": "A"
-    }
-  ]
-}
-```
+      "name": "Coca-Cola Company",
+      "ticker": "KO",
+      "financial_health": "Coca-Cola demonstrates stable, mature business fundamentals with TTM revenue of $49.28B and quarterly revenue growth of 12.10% YoY. Full-year 2024 revenue was $47.061B (+2.86% from 2023), with 2025 revenue of $47.941B (+1.87%). Net profit margin is 27.80% (improved 13.52% from 3-year average of 24.49%), reflecting strong pricing power. EPS (TTM) is $3.05, with 2024 EPS of $2.47. Gross profit margin is 61.06% (2024), demonstrating pricing strength. Adjusted EBITDA of $16.72B reflects operational efficiency. Free cash flow of $5.3B in FY2025 (+11.7% growth) provides substantial dividend capacity.",
+      "valuation": "Coca-Cola trades at EV/EBITDA of 21.74 (as of May 2026), improved from 22.11 12-month average. P/E ratio reflects premium valuation appropriate for defensive consumer staples. Debt-to-Equity ratio of 124.94% (1.25x) is elevated but manageable given strong cash flows. Total debt of $44.65B vs. cash of $13.82B results in net debt of ~$30.8B. Debt/EBITDA ratio of 2.83x is reasonable for the sector. Valuation appears fair for a high-quality dividend aristocrat with 64 consecutive years of dividend increases.",
+      "analyst_consensus": "Consensus rating is Buy with 29 Buy recommendations, 6 Hold, and 0 Sell recommendations from 35 analysts. Median price target is $87.00 (ranging from $71.38 to $92.00), implying 10.8% upside from current $78.42. Recent upgrades include UBS (raised to $87 from $82) and TD Cowen (raised to $90 from $85), both maintaining Buy ratings. FY2026 guidance: 4%-5% organic revenue growth and 
