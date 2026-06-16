@@ -1,28 +1,28 @@
-Flight Deals from JFK to LHR - June 2025:
+### Flight Options:
+1. **United Airlines**
+   - **Price:** $850
+   - **Departure Date:** October 7, 2026
+   - **Arrival Date:** October 8, 2026
+   - **Flight Duration:** Approximately 9 hours
+   - **Non-stop:** Yes
 
-1. Airline: Virgin Atlantic
-   - Price: $497
-   - Non-stop
-   - In-flight amenities: meals, drinks, entertainment, WiFi
+2. **British Airways**
+   - **Price:** $894
+   - **Departure Date:** October 12, 2026
+   - **Arrival Date:** October 13, 2026
+   - **Flight Duration:** Approximately 9 hours 15 minutes
+   - **Non-stop:** Yes
 
-2. Airline: JetBlue
-   - Price: $314
-   - Non-stop
-   - Booking available now
+3. **Icelandair**
+   - **Price:** $765
+   - **Departure Date:** October 14, 2026
+   - **Arrival Date:** October 15, 2026
+   - **Flight Duration:** Approximately 9 hours 1 minute
+   - **Non-stop:** Yes
 
-3. Airline: Delta
-   - Price: $239
-   - Non-stop
-   - Additional services: earns airline miles
-
-4. Airline: SWISS
-   - Price: $402
-   - Non-stop
-   - Comfortable seating and great service
-
-5. Airline: United Airlines
-   - Price: $450
-   - Non-stop
-   - Great onboard experience
-
-Best Deal: JetBlue at $314 for a non-stop flight from JFK to LHR. 
+4. **Delta Airlines**
+   - **Price:** $311
+   - **Departure Date:** October 12, 2026
+   - **Arrival Date:** October 13, 2026
+   - **Flight Duration:** Approximately 11.5 hours (with layover, check if non-stop)
+   - **Non-stop:** Depends on specific routes
